@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <div class="brand">
+      <span class="brand-name">Calculator</span>
+      <span class="brand-dot"></span>
+    </div>
+
+    <div class="display">
+      <div class="history" id="history"></div>
+      <div class="current" id="current">0</div>
+    </div>
+
+    <div class="keys">
+      <button class="function danger" data-action="clear">AC</button>
+      <button class="function" data-action="negate">±</button>
+      <button class="function" data-action="percent">%</button>
+      <button class="operator" data-op="/">÷</button>
+
+      <button data-num="7">7</button>
+      <button data-num="8">8</button>
+      <button data-num="9">9</button>
+      <button class="operator" data-op="*">×</button>
+
+      <button data-num="4">4</button>
+      <button data-num="5">5</button>
+      <button data-num="6">6</button>
+      <button class="operator" data-op="-">−</button>
+
+      <button data-num="1">1</button>
+      <button data-num="2">2</button>
+      <button data-num="3">3</button>
+      <button class="operator" data-op="+">+</button>
+
+      <button class="zero" data-num="0">0</button>
+      <button data-action="decimal">.</button>
+      <button class="equals" data-action="equals">=</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
